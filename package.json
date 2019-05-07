@@ -25,7 +25,6 @@
     "url": "git+https://github.com/teamairship/hooks.git"
   },
   "keywords": [
-    "tslint",
     "react",
     "hooks"
   ],
