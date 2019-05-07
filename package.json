@@ -58,5 +58,8 @@
   },
   "peerDependencies": {
     "react": "^16.8.6"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
