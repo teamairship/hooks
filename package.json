@@ -1,0 +1,62 @@
+{
+  "name": "@airship/hooks",
+  "version": "0.0.1-alpha",
+  "description": "A package to share custom hooks.",
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "files": [
+    "lib"
+  ],
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rollup -c && tsc",
+    "develop": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Rollup\" -c \"cyan.bold,red.bold\" \"yarn run watch-ts\" \"yarn run watch-rollup\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-rollup": "rollup -cw",
+    "watch-ts": "tsc -w"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamairship/hooks.git"
+  },
+  "keywords": [
+    "tslint",
+    "react",
+    "hooks"
+  ],
+  "author": "Seth Alexander",
+  "contributors": [
+    "Seth Alexander <seth@teamairship.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teamairship/hooks/issues"
+  },
+  "homepage": "https://github.com/teamairship/hooks#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "concurrently": "^4.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "husky": "^2.2.0",
+    "prettier": "^1.17.0",
+    "pretty-quick": "^1.10.0",
+    "rollup": "^1.11.3",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.9.3",
+    "typescript": "^3.4.5"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  }
+}
