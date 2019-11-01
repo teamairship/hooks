@@ -16,7 +16,7 @@ interface ReactNativeNode {
  * @param {ReactChild} node
  * @returns {Promise<Coords>}
  */
-export default async function measurePosition(
+export default async function measureNode(
   node: React.ReactChild & ReactNativeNode
 ): Promise<Coords> {
   const defaultVal: Coords = {
