@@ -1,27 +1,23 @@
 # Airship Custom Hooks
 
-## Usage
-
-In `src` dir:
-
-- `universal` hooks can be used anywhere
-- `reactNative` hooks can only be used in ReactNative applications
-
-First install:
+## Installation
 
 ```
 yarn add @airship/hooks
 ```
 
-Then use in a file:
+## Usage
 
 ```
-import hooks from "@airship/hooks";
+import { useDataFetch } from "@airship/hooks";
+import { useInterval } from "@airship/hooks";
+// etc.
+```
 
-...
+## Usage - React Native Hooks
 
-const { data, isLoading, isError } = hooks.useDataFetch(
-  fetch('http://example.com/movies.json'),
-  { movies: [] },
-);
+```
+import reactNativeHooks from "@airship/hooks/reactNative"
+import { useMeasure } from "@airship/hooks/reactNative"
+// etc.
 ```
